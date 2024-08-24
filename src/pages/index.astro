@@ -1,0 +1,18 @@
+---
+// Layout
+import Layout from '../layouts/Layout.astro';
+
+// Components
+import Navbar from '@components/Navbar.astro';
+import Footer from '@components/Footer.astro';
+---
+
+<Layout title="Project Title">
+	<main class="app-layout theme--dark">
+		<Navbar></Navbar>
+		<div class="container">
+			<h1 style="color: rgb(23, 71, 173); padding-top: 30px;">Astro project</h1>
+		</div>
+		<Footer></Footer>
+	</main>
+</Layout>

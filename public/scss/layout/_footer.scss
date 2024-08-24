@@ -1,0 +1,20 @@
+.footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 30px 0px;
+    background-color: $bg-100;
+
+    a {
+        color: rgb($accent);
+        font-weight: bolder;
+    }
+
+    .container {
+        .footer-text {
+            color: $text-50;
+            text-align: center;
+        }
+    }
+}
