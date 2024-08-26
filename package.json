@@ -1,5 +1,5 @@
 {
-  "name": "svg-inline-converter",
+  "name": "svg-code-converter",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
