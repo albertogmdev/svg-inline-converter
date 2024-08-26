@@ -1,0 +1,38 @@
+<div>
+    
+</div>
+
+<script>
+	window.addEventListener("dragenter", function( event ) {
+		event.preventDefault()
+		event.stopPropagation()
+
+		event.dataTransfer.dropEffect = 'copy';
+		console.log(event.dataTransfer.items[0].type);
+	}, false);
+	window.addEventListener("dragleave", function( event ) {
+		event.preventDefault()
+		event.stopPropagation()
+		console.log('leave')
+	}, false);
+	window.addEventListener("drop", function( event ) {
+		event.preventDefault()
+		event.stopPropagation()
+		
+		let dt = event.dataTransfer
+		let files = dt.files
+		console.log(dt)
+		console.log(files)
+
+		var reader = new FileReader();
+		reader.readAsDataURL(files[0]);
+		reader.onload = function () {
+			console.log(reader)
+			console.log(reader.result);
+		};
+		reader.onerror = function (error) {
+			console.log('Error: ', error);
+		};
+
+	}, false);
+</script>
