@@ -1,0 +1,16 @@
+.file-input {
+    width: 100%;
+    margin: 30px 0px;
+    padding: 30px;
+    border-radius: $border-radius-box;
+    text-align: center;
+    background-color: $bg-50;
+
+    p {
+        color: $text-50;
+    }
+
+    #svginput {
+        display: none;
+    }
+}

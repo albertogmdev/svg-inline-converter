@@ -73,6 +73,11 @@ main {
   background-color: var(--bg-75);
 }
 
+h1 {
+  color: var(--text-50);
+  text-align: center;
+}
+
 .container {
   display: block;
   max-width: 1300px;
@@ -247,6 +252,21 @@ main {
   height: 24px;
   background-color: var(--text-50);
   cursor: pointer;
+}
+
+.file-input {
+  width: 100%;
+  margin: 30px 0px;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  background-color: var(--bg-50);
+}
+.file-input p {
+  color: var(--text-50);
+}
+.file-input #svginput {
+  display: none;
 }
 
 /*# sourceMappingURL=styles.css.map */

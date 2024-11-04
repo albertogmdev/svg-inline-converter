@@ -24,6 +24,11 @@ main {
     background-color: $bg-75;
 }
 
+h1 {
+    color: $text-50;
+    text-align: center;
+}
+
 .container {
     display: block;
     max-width: 1300px;

@@ -1,21 +1,24 @@
-<div>
-    
+<div class="file-input">
+	<p>Introduce your svg file</p>
+    <input type="file" name="svginput" id="svginput">
 </div>
 
 <script>
-	window.addEventListener("dragenter", function( event ) {
+	const fileInput = document.querySelector('.file-input')
+
+	fileInput.addEventListener("dragenter", function( event ) {
 		event.preventDefault()
 		event.stopPropagation()
 
 		event.dataTransfer.dropEffect = 'copy';
 		console.log(event.dataTransfer.items[0].type);
 	}, false);
-	window.addEventListener("dragleave", function( event ) {
+	fileInput.addEventListener("dragleave", function( event ) {
 		event.preventDefault()
 		event.stopPropagation()
 		console.log('leave')
 	}, false);
-	window.addEventListener("drop", function( event ) {
+	fileInput.addEventListener("drop", function( event ) {
 		event.preventDefault()
 		event.stopPropagation()
 		
